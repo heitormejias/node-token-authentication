@@ -32,9 +32,10 @@ app.get('/setup', function(req, res) {
 
 	// create a sample user
 	var nick = new User({
-		name: 'Heitor',
+		name: 'Heitor Mejias',
+		user: 'heitor',
 		password: 'heitor',
-		admin: true
+
 	});
 	nick.save(function(err) {
 		if (err) throw err;
@@ -62,7 +63,7 @@ apiRoutes.post('/authenticate', function(req, res) {
 
 	// find the user
 	User.findOne({
-		name: req.body.name
+		user: req.body.user
 	}, function(err, user) {
 
 		if (err) throw err;
