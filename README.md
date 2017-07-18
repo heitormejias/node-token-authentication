@@ -1,3 +1,6 @@
+# Referencia
+https://scotch.io/tutorials/authenticate-a-node-js-api-with-json-web-tokens
+
 # Node Token Authentication
 
 This repo uses JSON Web Tokens and the [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) package to implement token based authentication on a simple Node.js API.
@@ -21,7 +24,7 @@ Once everything is set up, we can begin to use our app by creating and verifying
 
 ### Getting a Token
 
-Send a `POST` request to `http://localhost:8080/api/authenticate` with test user parameters as `x-www-form-urlencoded`. 
+Send a `POST` request to `http://localhost:8080/api/authenticate` with test user parameters as `x-www-form-urlencoded`.
 
 ```
   {
